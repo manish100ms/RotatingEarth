@@ -1,18 +1,42 @@
-nav{
-    display: flex;
-    justify-content: space-around;  
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    font-size: 25px;
-    font-family: 'Encode Sans SC', sans-serif;
-    background-image: url(images/header.jpg);
-    padding: 10px;
-    
+html, body{
+    height: 100%;
+    margin: 0px;
+    background-image: url(./images/space.jpg);
+    background-size: cover;
 }
 
-nav a{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
+.earth{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-image: url(./images/map.jpg);
+    background-size: cover;
+    transform: rotate(-23.5deg);
+    box-shadow: 0px 0px 30px rgb(0, 80, 184);
+    animation: rotate 50s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate{
+    0%{background-position-x: 100%;}
+    100%{background-position-x: -242%;}
+}
+
+.shadow{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 100%, rgba(255,255,255,0.8) 1%, rgba(0,0,0,0.5) 40%)
 }
